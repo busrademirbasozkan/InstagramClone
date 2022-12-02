@@ -86,6 +86,7 @@
                             <constraint firstItem="axU-vy-L9a" firstAttribute="leading" secondItem="kby-Vb-JPb" secondAttribute="leading" id="qTx-fn-IVh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KGv-8U-4c3"/>
                     <connections>
                         <outlet property="emailText" destination="axU-vy-L9a" id="5G1-Se-BgX"/>
                         <outlet property="passwordText" destination="kby-Vb-JPb" id="dvh-T1-2Ub"/>
@@ -99,7 +100,7 @@
         <!--Upload-->
         <scene sceneID="Iq8-eZ-6qP">
             <objects>
-                <viewController id="yR5-i5-4Ud" sceneMemberID="viewController">
+                <viewController id="yR5-i5-4Ud" customClass="UploadViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YfJ-4D-Fus">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,12 +111,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6j-GB-KS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="38"/>
+            <point key="canvasLocation" x="842" y="21"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="261-8r-LHt">
+            <objects>
+                <viewController id="cSz-KY-okh" customClass="SettingsViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTG-rW-W5a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-LO-5YD">
+                                <rect key="frame" x="128" y="385" width="136" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LOGOUT">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButton:" destination="cSz-KY-okh" eventType="touchUpInside" id="js5-pc-mwz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wnw-YL-NsQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="7QJ-71-pT6"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMainVC" modalPresentationStyle="fullScreen" id="PPq-KP-C0y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJm-j3-7Ko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841.9847328244274" y="694.36619718309862"/>
         </scene>
         <!--Feed-->
         <scene sceneID="GPQ-oY-cCR">
             <objects>
-                <viewController id="Egs-le-xaX" sceneMemberID="viewController">
+                <viewController id="Egs-le-xaX" customClass="FeedViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="goX-if-HMP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +175,7 @@
                     <connections>
                         <segue destination="Egs-le-xaX" kind="relationship" relationship="viewControllers" id="nSU-fc-27A"/>
                         <segue destination="yR5-i5-4Ud" kind="relationship" relationship="viewControllers" id="BQN-Il-MgJ"/>
+                        <segue destination="cSz-KY-okh" kind="relationship" relationship="viewControllers" id="2M6-Df-h8t"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scd-vc-1ay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,6 +185,7 @@
     </scenes>
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

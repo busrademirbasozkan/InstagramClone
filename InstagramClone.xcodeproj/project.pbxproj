@@ -16,6 +16,9 @@
 		E8038339293A48370012B975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8038337293A48370012B975 /* LaunchScreen.storyboard */; };
 		E8038344293A49130012B975 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8038343293A49130012B975 /* GoogleService-Info.plist */; };
 		E8038347293A49AA0012B975 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = E8038346293A49AA0012B975 /* Algorithms */; };
+		E8038349293A6CBE0012B975 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8038348293A6CBE0012B975 /* FeedViewController.swift */; };
+		E803834B293A6CCD0012B975 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803834A293A6CCD0012B975 /* UploadViewController.swift */; };
+		E803834D293A6CDD0012B975 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803834C293A6CDD0012B975 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		E8038338293A48370012B975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E803833A293A48370012B975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8038343293A49130012B975 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8038348293A6CBE0012B975 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E803834A293A6CCD0012B975 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		E803834C293A6CDD0012B975 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,6 @@
 				214604B3C2A4AEC1EF57DADD /* Pods-InstagramClone.debug.xcconfig */,
 				65ADB1A9A3A4BD5E28802923 /* Pods-InstagramClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,9 @@
 		E8038340293A483F0012B975 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E8038348293A6CBE0012B975 /* FeedViewController.swift */,
+				E803834A293A6CCD0012B975 /* UploadViewController.swift */,
+				E803834C293A6CDD0012B975 /* SettingsViewController.swift */,
 				E8038330293A48360012B975 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -171,7 +179,7 @@
 			);
 			mainGroup = E8038320293A48360012B975;
 			packageReferences = (
-				E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */,
+				E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = E803832A293A48360012B975 /* Products */;
 			projectDirPath = "";
@@ -244,8 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8038331293A48360012B975 /* ViewController.swift in Sources */,
+				E803834B293A6CCD0012B975 /* UploadViewController.swift in Sources */,
 				E803832D293A48360012B975 /* AppDelegate.swift in Sources */,
+				E8038349293A6CBE0012B975 /* FeedViewController.swift in Sources */,
 				E803832F293A48360012B975 /* SceneDelegate.swift in Sources */,
+				E803834D293A6CDD0012B975 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +478,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */ = {
+		E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -480,7 +491,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		E8038346293A49AA0012B975 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms.git" */;
+			package = E8038345293A49AA0012B975 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
