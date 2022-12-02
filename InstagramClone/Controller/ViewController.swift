@@ -23,7 +23,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signinButton(_ sender: Any) {
-        performSegue(withIdentifier: "toTabBar", sender: nil)
+        if emailText.text != "" && passwordText.text != ""{
+            Auth.auth().signIn(withEmail: emailText.text!,password: passwordText.text!) { (AuthData, error) in
+                if error != nil{
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                }else{
+                    self.performSegue(withIdentifier: "toTabBar", sender: nil)
+                }
+            }
+        }else{
+            makeAlert(titleInput: "Error!", messageInput: "Username and Password not found")
+        }
     }
     
     
