@@ -1,0 +1,9 @@
+*.jpeg
+*.jpg
+*.img
+*.png
+
+xcuserdata/
+
+GoogleService-Info.plist
+Info.plist
