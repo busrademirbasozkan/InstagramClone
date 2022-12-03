@@ -19,6 +19,7 @@
 		E8038349293A6CBE0012B975 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8038348293A6CBE0012B975 /* FeedViewController.swift */; };
 		E803834B293A6CCD0012B975 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803834A293A6CCD0012B975 /* UploadViewController.swift */; };
 		E803834D293A6CDD0012B975 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803834C293A6CDD0012B975 /* SettingsViewController.swift */; };
+		E82C2621293BC81800D8C902 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82C2620293BC81800D8C902 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E8038348293A6CBE0012B975 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E803834A293A6CCD0012B975 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		E803834C293A6CDD0012B975 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E82C2620293BC81800D8C902 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				E8038348293A6CBE0012B975 /* FeedViewController.swift */,
 				E803834A293A6CCD0012B975 /* UploadViewController.swift */,
 				E803834C293A6CDD0012B975 /* SettingsViewController.swift */,
+				E82C2620293BC81800D8C902 /* FeedCell.swift */,
 				E8038330293A48360012B975 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82C2621293BC81800D8C902 /* FeedCell.swift in Sources */,
 				E8038331293A48360012B975 /* ViewController.swift in Sources */,
 				E803834B293A6CCD0012B975 /* UploadViewController.swift in Sources */,
 				E803832D293A48360012B975 /* AppDelegate.swift in Sources */,
